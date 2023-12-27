@@ -43,8 +43,8 @@ const Header = () => {
         <header className="top-0 w-full z-50 relative py-[30px] mx-auto right-0 left-0 container">
             <div className="flex items-center justify-center md:justify-between">
                 <Link href="/" className="flex">
-                    <AnimatedTextCharacter text="H" className="text-4xl font-semibold text-sky-700" />
-                    <AnimatedTextCharacter text="asib." className="text-4xl text-slate-700/80" />
+                    <AnimatedTextCharacter text="D" className="text-4xl font-semibold text-sky-700" />
+                    <AnimatedTextCharacter text="nm." className="text-4xl text-slate-700/80" />
                 </Link>
 
                 <motion.ul variants={container} initial="hidden" animate="visible" className="__navright">
