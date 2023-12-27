@@ -10,21 +10,21 @@ With its modern design and intuitive layout, the Landing Page welcomes users to 
 
 ## Features
 
-- Single `Landing` Page
-- `Fiverr` Profile Link
-- `Upwork` Profile Link
-- `Resume` Link
-- Mention `Company`
-- Recent Projects with `Live Link` & `Source Code`
-- Fully responsive for `PC`, `Laptop`, `Tablet` & `Mobile`
+-   Single `Landing` Page
+-   `Fiverr` Profile Link
+-   `Upwork` Profile Link
+-   `Resume` Link
+-   Mention `Company`
+-   Recent Projects with `Live Link` & `Source Code`
+-   Fully responsive for `PC`, `Laptop`, `Tablet` & `Mobile`
 
 ## Tech Stack
 
-- Framework: `Next.JS`
-- Styling: `Tailwind CSS`
-- Icons: `React Icons`
-- Linting: `ESLint`
-- Formatter: `Prettier`
+-   Framework: `Next.JS`
+-   Styling: `Tailwind CSS`
+-   Icons: `React Icons`
+-   Linting: `ESLint`
+-   Formatter: `Prettier`
 
 ## Technologies
 
@@ -60,7 +60,7 @@ yarn install
 
 ## Deployment
 
-- [x] `Live` Link - [Click Here](https://devhasibulislam.vercel.app/)
-- [x] `Resume` Link - [Click Here](https://drive.google.com/file/d/1Gdbax82oaBWz2_0-OYh44E7QvfB53wNS/view?usp=share_link)
+-   [x] `Live` Link - [Click Here](https://devhasibulislam.vercel.app/)
+-   [x] `Resume` Link - [Click Here](https://drive.google.com/file/d/1Gdbax82oaBWz2_0-OYh44E7QvfB53wNS/view?usp=share_link)
 
-* [x] `Author` Link - [Hasibul Islam](https://bento.me/devhasibulislam)
+*   [x] `Author` Link - [Hasibul Islam](https://bento.me/devhasibulislam)

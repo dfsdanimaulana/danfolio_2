@@ -8,21 +8,18 @@ import Worked from './sections/Worked'
 import Footer from '@widgets/Footer'
 import Why from './sections/Why/Why'
 
-
 const Home = () => {
-  return (
-    <>
-
-      <Hero />
-      {/* <Why /> */}
-      <About />
-      <Worked />
-      <Projects />
-      <GetInTouch />
-      <Footer />
-
-    </>
-  )
+    return (
+        <>
+            <Hero />
+            {/* <Why /> */}
+            <About />
+            <Worked />
+            <Projects />
+            <GetInTouch />
+            <Footer />
+        </>
+    )
 }
 
 export default Home
