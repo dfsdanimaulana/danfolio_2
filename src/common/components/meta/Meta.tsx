@@ -12,9 +12,9 @@ const Meta = () => {
             <link rel="pingback" href="https://devhasibulislam.vercel.app/"></link>
 
             {/* General Metadata */}
-            <meta name="author" content="Hasibul Islam" />
-            <title>Hasibul Islam (@devhasibulislam), a full stack web developer</title>
-            <meta title="Hasibul Islam (@devhasibulislam), a full stack web developer" name="title" />
+            <meta name="author" content="Dani Maulana" />
+            <title>Dani Maulana (@dnm17_), a full stack web developer</title>
+            <meta title="Dani Maulana (@dnm17_), a full stack web developer" name="title" />
 
             {/* Description and Keywords Metadata */}
             <meta
@@ -31,10 +31,10 @@ const Meta = () => {
             <meta name="p:domain_verify" content="c55db76c3a2ff1b5533315270d4676b3" />
 
             {/* Open Graph Tags (for Facebook) */}
-            <meta property="og:site_name" content="Hasibul Islam" />
+            <meta property="og:site_name" content="Dani Maulana" />
             <meta property="og:url" content="https://devhasibulislam.vercel.app/" />
             <meta property="og:type" content="website" />
-            <meta property="og:title" content="Hasibul Islam (@devhasibulislam), a full stack web developer" />
+            <meta property="og:title" content="Dani Maulana (@dnm17_), a full stack web developer" />
             <meta
                 property="og:description"
                 content="#MernStack #FullStack #WebsiteDevelopment - Developing websites for individuals, startups, small and medium businesses, and enterprises"
@@ -49,8 +49,8 @@ const Meta = () => {
 
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@devhasibulislam" />
-            <meta name="twitter:title" content="Hasibul Islam (@devhasibulislam), a full stack web developer" />
+            <meta name="twitter:site" content="@dnm17_" />
+            <meta name="twitter:title" content="Dani Maulana (@dnm17_), a full stack web developer" />
             <meta
                 name="twitter:description"
                 content="#MernStack #FullStack #WebsiteDevelopment - Developing websites for individuals, startups, small and medium businesses, and enterprises"
@@ -62,7 +62,7 @@ const Meta = () => {
 
             {/* Pinterest Tags */}
             <meta name="pinterest-rich-pin" content="true" />
-            <meta name="pinterest:title" content="Hasibul Islam (@devhasibulislam), a full stack web developer" />
+            <meta name="pinterest:title" content="Dani Maulana (@dnm17_), a full stack web developer" />
             <meta
                 name="pinterest:description"
                 content="#MernStack #FullStack #WebsiteDevelopment - Developing websites for individuals, startups, small and medium businesses, and enterprises"
