@@ -1,5 +1,5 @@
 // imports
-import { Urbanist } from '@next/font/google'
+import { Urbanist } from 'next/font/google'
 //
 import Mail from '@widgets/Mail'
 import Glassify from '@components/Glassify'
