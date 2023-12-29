@@ -1,14 +1,53 @@
 'use client'
 
 import Link from 'next/link'
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useState, useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion'
 //
 import { navData } from '@config/constants'
-import AnimatedTextCharacter from '@components/motion/AnimatedTextCherecter'
+import AnimatedTextCharacter from '@components/motion/AnimatedTextCharacter'
 import Button from '@components/Button'
 
 const Header = () => {
+    const [prevScrollPos, setPrevScrollPos] = useState<number>(0)
+    const [visible, setVisible] = useState<boolean>(true)
+    const [scrolledToTop, setScrolledToTop] = useState<boolean>(true)
+    const controls = useAnimation()
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.scrollY
+            setVisible(prevScrollPos > currentScrollPos)
+            setPrevScrollPos(currentScrollPos)
+            setScrolledToTop(window.scrollY < 50)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [prevScrollPos])
+
+    useEffect(() => {
+        controls.start(visible ? (scrolledToTop ? 'visible_top' : 'visible') : 'hidden')
+    }, [controls, visible, scrolledToTop])
+
+    const variants = {
+        visible: {
+            translateY: 0,
+            backgroundColor: 'rgba(10, 25, 47, 0.95)',
+            boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)',
+        },
+        visible_top: {
+            translateY: 0,
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
+        },
+        hidden: {
+            translateY: '-100%',
+            backgroundColor: 'rgba(10, 25, 47, 0.95)',
+            boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)',
+        },
+    }
+
     // motion
     const container = {
         hidden: { opacity: 0 },
@@ -40,8 +79,13 @@ const Header = () => {
     }
 
     return (
-        <header className="top-0 w-full z-50 relative py-[30px] mx-auto right-0 left-0 container">
-            <div className="flex items-center justify-center md:justify-between">
+        <motion.header
+            initial="visible_top"
+            animate={controls}
+            variants={variants}
+            className="fixed top-0 w-full z-50 py-[20px] mx-auto right-0 left-0 transition-transform duration-150"
+        >
+            <div className="container flex items-center justify-center md:justify-between">
                 <Link href="/" className="flex">
                     <AnimatedTextCharacter text="D" className="text-4xl font-semibold text-sky-700" />
                     <AnimatedTextCharacter text="nm." className="text-4xl text-slate-700/80" />
@@ -65,7 +109,7 @@ const Header = () => {
                     {/* <Link href='/' target='__blank' > <Button > Resume </Button> </Link> */}
                 </motion.ul>
             </div>
-        </header>
+        </motion.header>
     )
 }
 

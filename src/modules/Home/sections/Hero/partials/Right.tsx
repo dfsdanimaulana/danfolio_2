@@ -17,7 +17,7 @@ const Right = () => {
                             <path fill="#fff" transform="rotate(-180 334 534.4)" d="M0 0h668v1068.8H0z"></path>
                         </clipPath>
                     </defs>
-                    <g opacity=".4" clip-path="url(#:R1l6:-clip-path)" stroke-width="4">
+                    <g opacity=".4" clipPath="url(#:R1l6:-clip-path)" strokeWidth="4">
                         <path
                             opacity=".3"
                             d="M584.5 770.4v-474M484.5 770.4v-474M384.5 770.4v-474M283.5 769.4v-474M183.5 768.4v-474M83.5 767.4v-474"
@@ -83,7 +83,7 @@ const Right = () => {
                             r="10.438"
                             transform="rotate(-180 484.301 574.062)"
                             fill="#0EA5E9"
-                            fill-opacity=".42"
+                            fillOpacity=".42"
                             stroke="#0EA5E9"
                         ></circle>
                         <circle
@@ -137,7 +137,7 @@ const Right = () => {
                             r="10.438"
                             transform="rotate(-180 83.5 484.3)"
                             fill="#0EA5E9"
-                            fill-opacity=".42"
+                            fillOpacity=".42"
                             stroke="#0EA5E9"
                         ></circle>
                         <circle

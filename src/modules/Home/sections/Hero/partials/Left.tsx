@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Button from '@components/Button'
 import { fadeUpSpring } from '@config/motion'
 import AnimatedTextWord from '@components/motion/AnimatedTextWord'
-import AnimatedTextCharacter from '@components/motion/AnimatedTextCherecter'
+import AnimatedTextCharacter from '@components/motion/AnimatedTextCharacter'
 
 const Left = () => {
     return (

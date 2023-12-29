@@ -64,3 +64,8 @@ yarn install
 -   [x] `Resume` Link - [Click Here](https://drive.google.com/file/d/1Gdbax82oaBWz2_0-OYh44E7QvfB53wNS/view?usp=share_link)
 
 *   [x] `Author` Link - [Hasibul Islam](https://bento.me/devhasibulislam)
+
+# Reference
+
+-   `Hasibul Islam` Link - [https://devhasibulislam.vercel.app/]
+-   `Brittany Chiang` Link - [https://v4.brittanychiang.com/]
