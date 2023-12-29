@@ -9,8 +9,8 @@ const Right = () => {
         <motion.div variants={fadeLeft} {...motionStep} className="cols-span-2 lg:block hidden">
             <div className="w-[300px] h-[350px] relative group rounded-xl after:transition-all after:duration-200 after:hover:left-[12px] after:hover:top-[12px] after:w-full after:z-30 after:h-full after:border-[2px] after:absolute after:top-[20px] after:left-[20px] after:rounded-xl after:border-sky-500">
                 <Image
-                    src="/images/model/devhasibulislam.jpg"
-                    blurDataURL="/images/model/devhasibulislam.jpg"
+                    src="/images/model/dani.jpg"
+                    blurDataURL="/images/model/dani.jpg"
                     className="rounded-xl z-40 transition-all duration-200 group-hover:translate-y-[2px] group-hover:translate-x-[2px]"
                     layout="fill"
                     objectFit="cover"

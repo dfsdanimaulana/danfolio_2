@@ -31,15 +31,15 @@ const Header = () => {
     }, [controls, visible, scrolledToTop])
 
     const variants = {
-        visible: {
-            translateY: 0,
-            backgroundColor: 'rgba(10, 25, 47, 0.95)',
-            boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)',
-        },
         visible_top: {
             translateY: 0,
             backgroundColor: 'transparent',
             boxShadow: 'none',
+        },
+        visible: {
+            translateY: 0,
+            backgroundColor: 'rgba(10, 25, 47, 0.95)',
+            boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)',
         },
         hidden: {
             translateY: '-100%',
@@ -83,7 +83,7 @@ const Header = () => {
             initial="visible_top"
             animate={controls}
             variants={variants}
-            className="fixed top-0 w-full z-50 py-[20px] mx-auto right-0 left-0 transition-transform duration-150"
+            className="fixed top-0 w-full z-50 py-[20px] mx-auto right-0 left-0"
         >
             <div className="container flex items-center justify-center md:justify-between">
                 <Link href="/" className="flex">
