@@ -7,8 +7,10 @@ import { motion, useAnimation } from 'framer-motion'
 import { navData } from '@config/constants'
 import AnimatedTextCharacter from '@components/motion/AnimatedTextCharacter'
 import Button from '@components/Button'
+import MenuButton from '@components/MenuButton'
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
     const [prevScrollPos, setPrevScrollPos] = useState<number>(0)
     const [visible, setVisible] = useState<boolean>(true)
     const [scrolledToTop, setScrolledToTop] = useState<boolean>(true)
@@ -20,6 +22,7 @@ const Header = () => {
             setVisible(prevScrollPos > currentScrollPos)
             setPrevScrollPos(currentScrollPos)
             setScrolledToTop(window.scrollY < 50)
+            setIsOpen(false)
         }
 
         window.addEventListener('scroll', handleScroll)
@@ -85,11 +88,24 @@ const Header = () => {
             variants={variants}
             className="fixed top-0 w-full z-50 py-[20px] mx-auto right-0 left-0"
         >
-            <div className="container flex items-center justify-center md:justify-between">
+            <div className="container flex items-center justify-between">
                 <Link href="/" className="flex">
                     <AnimatedTextCharacter text="D" className="text-4xl font-semibold text-sky-700" />
                     <AnimatedTextCharacter text="nm." className="text-4xl text-slate-700/80" />
                 </Link>
+
+                <MenuButton
+                    initial="hidden"
+                    animate="visible"
+                    variants={child}
+                    className="block lg:hidden"
+                    isOpen={isOpen}
+                    onClick={() => setIsOpen(!isOpen)}
+                    strokeWidth="4"
+                    color="#0369a1"
+                    lineProps={{ strokeLinecap: 'round' }}
+                    transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+                />
 
                 <motion.ul variants={container} initial="hidden" animate="visible" className="__navright">
                     {navData.map((e: string, i: number) => (
