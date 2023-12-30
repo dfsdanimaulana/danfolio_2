@@ -10,7 +10,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/dnm17_" target="_blank" className="text-sky-400">
                         @dnm17_
                     </a>{' '}
-                    Built & Designed by{' '}
+                    built & designed by{' '}
                     <a href="https://bento.me/devhasibulislam" target="_blank" className="text-sky-400">
                         @Hasibul Islam
                     </a>{' '}

@@ -38,16 +38,19 @@ const Header = () => {
             translateY: 0,
             backgroundColor: 'transparent',
             boxShadow: 'none',
+            padding: '30px 0',
         },
         visible: {
             translateY: 0,
             backgroundColor: 'rgba(10, 25, 47, 0.95)',
             boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)',
+            padding: '20px 0',
         },
         hidden: {
             translateY: '-100%',
             backgroundColor: 'rgba(10, 25, 47, 0.95)',
             boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)',
+            padding: '20px 0',
         },
     }
 
@@ -86,9 +89,9 @@ const Header = () => {
             initial="visible_top"
             animate={controls}
             variants={variants}
-            className="fixed top-0 w-full z-50 py-[20px] mx-auto right-0 left-0"
+            className="fixed top-0 w-full z-50 mx-auto right-0 left-0"
         >
-            <div className="container flex items-center justify-between">
+            <div className="flex items-center justify-between px-[20px] lg:px-[40px]">
                 <Link href="/" className="flex">
                     <AnimatedTextCharacter text="D" className="text-4xl font-semibold text-sky-700" />
                     <AnimatedTextCharacter text="nm." className="text-4xl text-slate-700/80" />
