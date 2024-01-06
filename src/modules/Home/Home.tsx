@@ -4,9 +4,9 @@ import About from './sections/About'
 import GetInTouch from './sections/GetInTouch'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
-import Worked from './sections/Worked'
 import Footer from '@widgets/Footer'
-import Why from './sections/Why/Why'
+// import Worked from './sections/Worked'
+// import Why from './sections/Why/Why'
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
             <Hero />
             {/* <Why /> */}
             <About />
-            <Worked />
+            {/* <Worked /> */}
             <Projects />
             <GetInTouch />
             <Footer />

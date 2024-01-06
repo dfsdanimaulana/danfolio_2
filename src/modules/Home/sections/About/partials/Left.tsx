@@ -8,10 +8,9 @@ import { fadeTop, motionStep } from '@config/motion'
 const Left = () => {
     // content
     const content = [
-        "Hello! I'm Dani, a passionate full stack web developer who loves creating captivating experiences on the internet. My journey into web development began in 2020 when I started experimenting with customizing Tumblr themes. Through tinkering with HTML and CSS, even something as simple as editing a reblog button, I discovered my fascination for building things online.",
-        // "Since then, I've had the incredible opportunity to work in diverse environments, including an advertising agency, a start-up, a large corporation, and a student-led design studio. These experiences have shaped my expertise in crafting accessible and inclusive products and digital experiences. Currently, I'm thrilled to be a part of Upstatement, where I collaborate with a range of clients to bring their visions to life.",
-        'I believe in the power of the web to connect people and create meaningful interactions. With a keen eye for detail and a commitment to user-centric design, I strive to deliver exceptional web solutions that leave a lasting impact.',
-        "Let's collaborate and turn your ideas into remarkable digital experiences!",
+        "Hi, I'm Dani Maulana, a self-taught web developer for almost two years. I've focused on HTML, CSS, and JavaScript, learning how to create websites from scratch. I've also explored making sites look good on all devices and started understanding how the back-end of websites works. I love learning at my own pace and improving my skills to build better digital experiences. I'm excited to keep growing and bring my expertise to new projects.",
+        'While I have no professional experience in the field, I have completed numerous projects on my own and through online courses, allowing me to develop a diverse skill set and a strong understanding of web development best practices.',
+        'I am a quick learner and always strive to improve my skills and stay up-to-date with the latest technologies. ',
         'Here are a few technologies I have been working with recently:',
     ]
 

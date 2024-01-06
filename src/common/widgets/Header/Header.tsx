@@ -125,7 +125,10 @@ const Header = () => {
                         </motion.a>
                     ))}
 
-                    {/* <Link href='/' target='__blank' > <Button > Resume </Button> </Link> */}
+                    <Link href="/" target="__blank">
+                        {' '}
+                        <Button outlined> Resume </Button>{' '}
+                    </Link>
                 </motion.ul>
             </div>
         </motion.header>

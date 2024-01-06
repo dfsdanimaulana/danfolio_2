@@ -5,6 +5,7 @@ module.exports = {
         extend: {
             colors: {
                 primary: 'sky-400',
+                secondary: '#64ffda',
             },
 
             fontFamily: {

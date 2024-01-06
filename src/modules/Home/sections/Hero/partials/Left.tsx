@@ -24,30 +24,25 @@ const Left = () => {
 
             <div className="relative">
                 <AnimatedTextWord text="Hi, my name is" className="text-base md:text-lg" />
-
-                <AnimatedTextCharacter
-                    className="!font-medium !bg-clip-text !text-4xl md:!text-7xl !leading-normal md:!leading-[87px] !text-slate-300"
-                    text="Dani Maulana."
-                />
-                <AnimatedTextCharacter
-                    className="!font-medium tracking-normal text-3xl leading-8 md:leading-normal md:!text-5xl text-slate-400 mt-1"
-                    text="Your Web Developer Partner"
-                />
-
-                <div className="my-8 leading-7 text-slate-400 md:text-lg max-w-3xl">
-                    <AnimatedTextWord
-                        text="Highly motivated and very passionate Full Stack Developer with three years of experience in Typescript, React js, Next js, Firebase, Tailwind CSS, Material UI, Node js, Express js, MongoDB"
-                        className="text-sm sm:text-lg"
+                <div className="my-7">
+                    <AnimatedTextCharacter
+                        className="!font-medium text-4xl md:text-7xl text-slate-300 tracking-tight"
+                        text="Dani Maulana."
+                    />
+                    <AnimatedTextCharacter
+                        className="!font-medium text-4xl md:text-7xl text-slate-400 tracking-tight"
+                        text="Your Web Developer Partner"
                     />
                 </div>
+                <AnimatedTextWord
+                    text="I'm a web developer with a passion for creating beautiful and functional websites and 2D web games. I am a self-taught developer with a strong foundation in HTML, CSS, and JavaScript."
+                    className="text-md text-slate-400 max-w-xl"
+                />
             </div>
 
             <motion.div variants={fadeUpSpring} initial="hidden" animate="visible" className="w-fit mt-16 md:mt-10">
-                <a
-                    href="https://drive.google.com/file/d/1Gdbax82oaBWz2_0-OYh44E7QvfB53wNS/view?usp=share_link"
-                    target="_blank"
-                >
-                    <Button outlined>Check Out My Resume</Button>
+                <a href="#works">
+                    <Button outlined>Check Out My Works</Button>
                 </a>
             </motion.div>
         </div>

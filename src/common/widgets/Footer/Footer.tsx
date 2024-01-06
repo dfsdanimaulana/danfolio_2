@@ -7,7 +7,7 @@ const Footer = () => {
                 <p className="opacity-90">
                     {' '}
                     Modified by{' '}
-                    <a href="https://www.instagram.com/dnm17_" target="_blank" className="text-sky-400">
+                    <a href="https://github.com/dfsdanimaulana" target="_blank" className="text-sky-400">
                         @dnm17_
                     </a>{' '}
                     built & designed by{' '}
@@ -15,7 +15,7 @@ const Footer = () => {
                         @Hasibul Islam
                     </a>{' '}
                     who inspired by{' '}
-                    <a href="https://github.com/bchiang7/v4" target="_blank" className="text-sky-400">
+                    <a href="https://v4.brittanychiang.com" target="_blank" className="text-sky-400">
                         Brittany Chiang
                     </a>{' '}
                     ❤️{' '}

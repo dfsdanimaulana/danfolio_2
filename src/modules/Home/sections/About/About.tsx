@@ -15,7 +15,7 @@ const About = () => {
                 className="flex items-center gap-2 text-lg md:text-3xl font-medium text-slate-300"
             >
                 <span className="text-sky-400 font-mono">01. </span>
-                About me
+                About Me
             </motion.h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-20">
