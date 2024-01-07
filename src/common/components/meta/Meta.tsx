@@ -8,8 +8,8 @@ const Meta = () => {
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
             <link rel="manifest" href="/site.webmanifest" />
-            <link rel="canonical" href="https://devhasibulislam.vercel.app/"></link>
-            <link rel="pingback" href="https://devhasibulislam.vercel.app/"></link>
+            <link rel="canonical" href="https://danfolio.vercel.app/"></link>
+            <link rel="pingback" href="https://danfolio.vercel.app/"></link>
 
             {/* General Metadata */}
             <meta name="author" content="Dani Maulana" />
@@ -32,7 +32,7 @@ const Meta = () => {
 
             {/* Open Graph Tags (for Facebook) */}
             <meta property="og:site_name" content="Dani Maulana" />
-            <meta property="og:url" content="https://devhasibulislam.vercel.app/" />
+            <meta property="og:url" content="https://danfolio.vercel.app/" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Dani Maulana (@dnm17_), a full stack web developer" />
             <meta

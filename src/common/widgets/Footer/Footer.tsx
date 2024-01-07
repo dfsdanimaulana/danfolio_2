@@ -11,8 +11,8 @@ const Footer = () => {
                         @dnm17_
                     </a>{' '}
                     built & designed by{' '}
-                    <a href="https://bento.me/devhasibulislam" target="_blank" className="text-sky-400">
-                        @Hasibul Islam
+                    <a href="https://devhasibulislam.vercel.app/" target="_blank" className="text-sky-400">
+                        Hasibul Islam
                     </a>{' '}
                     who inspired by{' '}
                     <a href="https://v4.brittanychiang.com" target="_blank" className="text-sky-400">

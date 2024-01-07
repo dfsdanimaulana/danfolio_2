@@ -15,8 +15,30 @@ export const projects: ProjectTypes[] = [
             "An online memory card game featuring the K-pop girl group 'Twice' as its theme, offering numerous levels to complete, authentication, a scoreboard, collection cards, a chat room, and many other features.",
         tech: ['React JS', 'Tailwind CSS', 'Firebase', 'Vite'],
         code: 'https://github.com/dfsdanimaulana/twice-game',
-        live: 'https://twice-memory.netlify.app/',
+        live: 'https://twice-memory.netlify.app',
         thumbnail: 'twice-memory.png',
         featured: false,
+        type: ['web', 'game'],
+    },
+    {
+        title: 'Tank War II',
+        description:
+            "An online 2D web game creating using Kaboom.js javascript web game library. It's an arcade game where you have to defeat your opponent's tanks.",
+        tech: ['Kaboom.js', 'Typescript', 'Vite-ts'],
+        live: 'https://tank-war-2d.netlify.app',
+        thumbnail: 'tank-war-2.png',
+        featured: false,
+        type: ['web', 'game'],
+    },
+    {
+        title: 'Circle Drop',
+        description:
+            "An online 2D web game creating using Matter.js javascript physics engine library. It's a simple game you just need to droop the circle with your mouse and match it with the same circle.",
+        tech: ['Matter.js', 'javascript', 'Webpack'],
+        code: 'https://github.com/dfsdanimaulana/circle-drop',
+        live: 'https://circle-drop.netlify.app/',
+        thumbnail: 'circle-drop.png',
+        featured: false,
+        type: ['web', 'game'],
     },
 ]

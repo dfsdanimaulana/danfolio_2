@@ -24,19 +24,19 @@ const Left = () => {
 
             <div className="relative">
                 <AnimatedTextWord text="Hi, my name is" className="text-base md:text-lg" />
-                <div className="my-7">
+                <div className="mt-3 mb-7">
                     <AnimatedTextCharacter
-                        className="!font-medium text-4xl md:text-7xl text-slate-300 tracking-tight"
+                        className="!font-medium text-5xl md:text-7xl text-slate-300 tracking-tight"
                         text="Dani Maulana."
                     />
                     <AnimatedTextCharacter
-                        className="!font-medium text-4xl md:text-7xl text-slate-400 tracking-tight"
+                        className="!font-medium text-3xl md:text-4xl text-slate-400 tracking-tight"
                         text="Your Web Developer Partner"
                     />
                 </div>
                 <AnimatedTextWord
                     text="I'm a web developer with a passion for creating beautiful and functional websites and 2D web games. I am a self-taught developer with a strong foundation in HTML, CSS, and JavaScript."
-                    className="text-md text-slate-400 max-w-xl"
+                    className="text-md text-slate-400 max-w-2xl"
                 />
             </div>
 

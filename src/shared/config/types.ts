@@ -18,6 +18,8 @@ export type ButtonProps = {
     children?: ReactNode
 }
 
+type ProjectType = 'web' | 'mobile' | 'game' | 'other'
+
 // project data types
 export type ProjectTypes = {
     title: string
@@ -28,4 +30,5 @@ export type ProjectTypes = {
     thumbnail: string
     featured?: boolean
     secondary?: boolean
+    type?: ProjectType[]
 }
