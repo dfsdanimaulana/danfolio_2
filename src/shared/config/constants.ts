@@ -41,4 +41,15 @@ export const projects: ProjectTypes[] = [
         featured: false,
         type: ['web', 'game'],
     },
+    {
+        title: 'Simple Snake',
+        description:
+            "An online 2D web game creating using HTML, CSS, and Javascript. It's a simple snake game where you just need to eat the food and grow, and become number 1 in the leaderboard.",
+        tech: ['HTML', 'CSS', 'javascript', 'Firebase', 'Webpack'],
+        code: 'https://github.com/dfsdanimaulana/simple-snake',
+        live: 'https://dfsdanimaulana.github.io/simple-snake',
+        thumbnail: 'simple-snake.png',
+        featured: false,
+        type: ['web', 'game'],
+    },
 ]
