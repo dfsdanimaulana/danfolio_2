@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import { Variants, motion, useAnimation } from 'framer-motion'
 //
 import { navData } from '@config/constants'
 import AnimatedTextCharacter from '@components/motion/AnimatedTextCharacter'
@@ -15,6 +15,7 @@ const Header = () => {
     const [visible, setVisible] = useState<boolean>(true)
     const [scrolledToTop, setScrolledToTop] = useState<boolean>(true)
     const controls = useAnimation()
+    const controls_mobile = useAnimation()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -32,6 +33,10 @@ const Header = () => {
     useEffect(() => {
         controls.start(visible ? (scrolledToTop ? 'visible_top' : 'visible') : 'hidden')
     }, [controls, visible, scrolledToTop])
+
+    useEffect(() => {
+        controls_mobile.start(isOpen ? 'visible' : 'hidden')
+    }, [controls_mobile, isOpen])
 
     const variants = {
         visible_top: {
@@ -62,6 +67,15 @@ const Header = () => {
             transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
         }),
     }
+    const container_mobile: Variants = {
+        hidden: { right: '-100%' },
+        visible: (i = 1) => ({
+            right: 0,
+            backgroundColor: 'rgba(10, 25, 47, 0.95)',
+            boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)',
+            transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
+        }),
+    }
 
     const child = {
         visible: {
@@ -89,7 +103,7 @@ const Header = () => {
             initial="visible_top"
             animate={controls}
             variants={variants}
-            className="fixed top-0 w-full z-50 mx-auto right-0 left-0"
+            className="fixed top-0 w-full z-30 mx-auto right-0 left-0"
         >
             <div className="flex items-center justify-between px-[20px] lg:px-[40px]">
                 <Link href="/" className="flex">
@@ -101,7 +115,7 @@ const Header = () => {
                     initial="hidden"
                     animate="visible"
                     variants={child}
-                    className="block lg:hidden"
+                    className="block lg:hidden z-50"
                     isOpen={isOpen}
                     onClick={() => setIsOpen(!isOpen)}
                     strokeWidth="4"
@@ -116,6 +130,32 @@ const Header = () => {
                             key={i}
                             variants={child}
                             className="hidden md:block"
+                            href={`#${e.toLocaleLowerCase()}`}
+                        >
+                            <li>
+                                {' '}
+                                <span>0{i + 1}.</span> {e}{' '}
+                            </li>
+                        </motion.a>
+                    ))}
+
+                    <Link href="/" target="__blank">
+                        {' '}
+                        <Button outlined> Resume </Button>{' '}
+                    </Link>
+                </motion.ul>
+
+                <motion.ul
+                    variants={container_mobile}
+                    initial="hidden"
+                    animate={controls_mobile}
+                    className="__navright-mobile"
+                >
+                    {navData.map((e: string, i: number) => (
+                        <motion.a
+                            key={i}
+                            variants={child}
+                            className="md:hidden block"
                             href={`#${e.toLocaleLowerCase()}`}
                         >
                             <li>
