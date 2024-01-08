@@ -18,12 +18,13 @@
         @apply relative transition-all duration-300 hover:bg-sky-600/10 flex items-center w-full text-left text-slate-400 cursor-pointer h-[42px] p-[0px_25px_2px] border-l-[2px] border-l-[#233554];
     }
     .__navright {
-        @apply hidden md:flex items-center gap-6 cursor-pointer;
+        @apply hidden md:flex items-center gap-6;
     }
     .__navright-mobile {
-        @apply flex md:hidden items-center justify-center flex-col gap-6 cursor-pointer absolute top-0 right-0 bottom-0 min-h-svh px-24 z-40;
+        @apply flex md:hidden items-center justify-center flex-col gap-6 absolute top-0 right-0 bottom-0 min-h-svh w-2/3 z-40;
     }
-    .__navright span {
+    .__navright span,
+    .__navright-mobile span {
         @apply text-sky-500;
     }
     a {

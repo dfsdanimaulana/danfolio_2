@@ -8,6 +8,8 @@ import { navData } from '@config/constants'
 import AnimatedTextCharacter from '@components/motion/AnimatedTextCharacter'
 import Button from '@components/Button'
 import MenuButton from '@components/MenuButton'
+import { socialData } from '@widgets/Socials/config/constans'
+import { SocialTypes } from '@widgets/Socials/config/types'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -169,6 +171,20 @@ const Header = () => {
                         {' '}
                         <Button outlined> Resume </Button>{' '}
                     </Link>
+
+                    <ul className="flex items-center gap-3 translate-y-10">
+                        {socialData.map((e: SocialTypes, i: number) => (
+                            <motion.li variants={child} key={i}>
+                                <Link
+                                    href={e.url}
+                                    target="_blank"
+                                    className="text-[22px] text-slate-400 hover:text-sky-400 cursor-pointer transition-all duration-300 hover:translate-y-[-10px]"
+                                >
+                                    {<e.icon />}
+                                </Link>
+                            </motion.li>
+                        ))}
+                    </ul>
                 </motion.ul>
             </div>
         </motion.header>
