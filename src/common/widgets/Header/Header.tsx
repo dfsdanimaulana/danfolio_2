@@ -105,7 +105,7 @@ const Header = () => {
             initial="visible_top"
             animate={controls}
             variants={variants}
-            className="fixed top-0 w-full z-30 mx-auto right-0 left-0"
+            className="fixed top-0 w-full mx-auto right-0 left-0 z-[9999999]"
         >
             <div className="flex items-center justify-between px-[20px] lg:px-[40px]">
                 <Link href="/" className="flex">

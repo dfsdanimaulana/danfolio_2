@@ -38,9 +38,9 @@ const Projects = () => {
                     ))}
             </div>
 
-            {/* <div className='flex items-center justify-center' >
-          <Button outlined > See More </Button>
-        </div> */}
+            <div className="flex items-center justify-center">
+                <Button outlined> See More </Button>
+            </div>
         </section>
     )
 }

@@ -8,7 +8,7 @@ import AnimatedTextCharacter from '@components/motion/AnimatedTextCharacter'
 
 const Left = () => {
     return (
-        <div className="relative col-span-2 z-10 text-left max-w-6xl mx-4 mt-7 md:mx-11">
+        <div className="relative col-span-2 z-10 text-left max-w-6xl mx-4 md:mx-11">
             <picture>
                 <source srcSet="/images/glassify/blur-cyan-0.png" type="image/png" />
                 <img
@@ -24,13 +24,13 @@ const Left = () => {
 
             <div className="relative">
                 <AnimatedTextWord text="Hi, my name is" className="text-base md:text-lg" />
-                <div className="mt-3 mb-7">
+                <div className="mt-4 mb-8">
                     <AnimatedTextCharacter
-                        className="!font-medium text-5xl md:text-7xl text-slate-300 tracking-tight"
+                        className="!font-bold text-5xl md:text-8xl text-slate-300 tracking-tight"
                         text="Dani Maulana."
                     />
                     <AnimatedTextCharacter
-                        className="!font-medium text-3xl md:text-4xl text-slate-400 tracking-tight"
+                        className="!font-bold text-3xl md:text-5xl text-slate-400 tracking-tight"
                         text="Your Web Developer Partner"
                     />
                 </div>
@@ -40,7 +40,7 @@ const Left = () => {
                 />
             </div>
 
-            <motion.div variants={fadeUpSpring} initial="hidden" animate="visible" className="w-fit mt-16 md:mt-10">
+            <motion.div variants={fadeUpSpring} initial="hidden" animate="visible" className="w-fit mt-16">
                 <a href="#works">
                     <Button outlined>Check Out My Works</Button>
                 </a>

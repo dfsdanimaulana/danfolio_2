@@ -6,11 +6,7 @@ const Footer = () => {
             <div className="text-center text-sm text-slate-400">
                 <p className="opacity-90">
                     {' '}
-                    Modified by{' '}
-                    <a href="https://github.com/dfsdanimaulana" target="_blank" className="text-sky-400">
-                        @dnm17_
-                    </a>{' '}
-                    built & designed by{' '}
+                    Built & designed by{' '}
                     <a href="https://devhasibulislam.vercel.app/" target="_blank" className="text-sky-400">
                         Hasibul Islam
                     </a>{' '}
@@ -19,6 +15,13 @@ const Footer = () => {
                         Brittany Chiang
                     </a>{' '}
                     ❤️{' '}
+                </p>
+                <p className="opacity-90">
+                    {' '}
+                    Modified by{' '}
+                    <a href="https://github.com/dfsdanimaulana" target="_blank" className="text-sky-400">
+                        @dnm17_
+                    </a>
                 </p>
             </div>
         </section>

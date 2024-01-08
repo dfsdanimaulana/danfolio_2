@@ -7,18 +7,18 @@ const GetInTouch = () => {
         'I’m currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!'
 
     return (
-        <section id="contact" className="text-center my-4">
+        <section id="contact" className="flex flex-col items-center justify-center text-center my-4 min-h-screen">
             <h1 className="flex items-center gap-2 text-md justify-center font-normal text-sky-400">
                 <span className=" font-mono">04. </span>
                 What next?
             </h1>
 
-            <h1 className="font-medium text-slate-300 text-4xl text-center mt-5"> Get In Touch </h1>
+            <h1 className="font-bold text-slate-300 text-5xl text-center mt-5"> Get In Touch </h1>
 
             <p className="text-slate-400 max-w-[500px] mx-auto my-3 mb-10">{content}</p>
 
             <Button href="mailto:danimaulana9f@gmail.com" outlined>
-                Get Free Quote
+                Say Hello
             </Button>
         </section>
     )
