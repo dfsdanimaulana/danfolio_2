@@ -27,7 +27,7 @@ const Left = () => {
                 <div className="mt-4 mb-8">
                     <AnimatedTextCharacter
                         className="!font-bold text-5xl md:text-8xl text-slate-300 tracking-tight"
-                        text="Dani Maulana."
+                        text="Dani Maulana"
                     />
                     <AnimatedTextCharacter
                         className="!font-bold text-3xl md:text-5xl text-slate-400 tracking-tight"

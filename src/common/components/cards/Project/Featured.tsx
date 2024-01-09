@@ -11,9 +11,9 @@ import { ProjectTypes } from '@config/types'
 const Featured = ({ secondary, live, thumbnail, code, title, description, tech }: ProjectTypes) => {
     const __renderImage = () => {
         return (
-            <div className="col-span-7 relative hidden sm:block">
+            <div className="col-span-full md:col-span-7 relative">
                 <Link href={`${live}`}>
-                    <div className="h-[350px] w-full relative rounded-xl overflow-hidden">
+                    <div className="h-[200px] md:h-[350px] w-full relative rounded-xl overflow-hidden">
                         <Image
                             src={`/images/projects/${thumbnail}`}
                             blurDataURL={`/images/projects/${thumbnail}`}
@@ -36,7 +36,7 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
             <div
                 className={cx(
                     'col-span-12 sm:col-span-5 text-right sm:absolute sm:left-[50%]',
-                    secondary && '!relative z-[100] !left-0 !text-start sm:w-[120%]',
+                    secondary && '!relative z-[100] !left-0 !text-start sm:w-[120%]'
                 )}
             >
                 <div>
@@ -49,8 +49,8 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
 
                     <div
                         className={cx(
-                            'flex text-slate-400 ml-[8rem] gap-2 justify-end flex-wrap',
-                            secondary && '!justify-start ml-0 mr-[8rem]',
+                            'flex text-slate-400 gap-2 flex-wrap',
+                            secondary ? 'justify-start' : 'justify-end'
                         )}
                     >
                         {tech.map((e: string, i: number) => (
@@ -91,17 +91,10 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
 
     return (
         <div className="relative grid grid-cols-12 items-center gap-3 group">
-            {secondary ? (
-                <>
-                    {__renderContent()}
-                    {__renderImage()}
-                </>
-            ) : (
-                <>
-                    {__renderImage()}
-                    {__renderContent()}
-                </>
-            )}
+            <>
+                {__renderImage()}
+                {__renderContent()}
+            </>
         </div>
     )
 }

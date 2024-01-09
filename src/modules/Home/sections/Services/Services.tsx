@@ -1,16 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 //
-import Featured from '@components/cards/Project/Featured'
-import ProjectCard from '@components/cards/Project/ProjectCard'
-import Button from '@components/Button'
 import { fadeTop, fadeLeft, motionStep } from '@config/motion'
-import { projects } from '@config/constants'
-import { ProjectTypes } from '@config/types'
 
 const Services = () => {
     return (
-        <section id="services" className="container">
+        <section id="services" className="container min-h-screen">
             <motion.h1
                 variants={fadeLeft}
                 {...motionStep}

@@ -16,9 +16,12 @@ const Left = () => {
 
     return (
         <motion.div variants={fadeTop} {...motionStep} className="col-span-3">
-            <div className="space-y-4 mt-7 text-slate-400">
+            <div className="space-y-4 !mt-7 text-slate-400">
                 {content.map((e: string, i: number) => (
-                    <p key={i}> {e} </p>
+                    <p key={i} className="tracking-wide">
+                        {' '}
+                        {e}{' '}
+                    </p>
                 ))}
 
                 <div className="__skills md:pr-56">
