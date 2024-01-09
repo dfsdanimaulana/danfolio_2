@@ -5,6 +5,7 @@ import GetInTouch from './sections/GetInTouch'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
 import Footer from '@widgets/Footer'
+import Services from './sections/Services'
 // import Worked from './sections/Worked'
 // import Why from './sections/Why/Why'
 
@@ -16,6 +17,7 @@ const Home = () => {
             <About />
             {/* <Worked /> */}
             <Projects />
+            <Services />
             <GetInTouch />
             <Footer />
         </>

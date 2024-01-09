@@ -17,7 +17,7 @@ export const projects: ProjectTypes[] = [
         code: 'https://github.com/dfsdanimaulana/twice-game',
         live: 'https://twice-memory.netlify.app',
         thumbnail: 'twice-memory.png',
-        featured: false,
+        featured: true,
         type: ['web', 'game'],
     },
     {
@@ -27,7 +27,7 @@ export const projects: ProjectTypes[] = [
         tech: ['Kaboom.js', 'Typescript', 'Vite-ts'],
         live: 'https://tank-war-2d.netlify.app',
         thumbnail: 'tank-war-2.png',
-        featured: false,
+        featured: true,
         type: ['web', 'game'],
     },
     {
