@@ -9,7 +9,7 @@ const GetInTouch = () => {
     return (
         <section id="contact" className="flex flex-col items-center justify-center text-center my-4 min-h-screen">
             <h1 className="flex items-center gap-2 text-md justify-center font-normal text-sky-400">
-                <span className=" font-mono">04. </span>
+                <span className=" font-mono">03. </span>
                 What next?
             </h1>
 

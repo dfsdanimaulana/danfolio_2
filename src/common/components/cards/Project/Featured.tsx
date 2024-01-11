@@ -7,8 +7,11 @@ import { FiGithub } from 'react-icons/fi'
 //
 import { cx } from '@config/constants'
 import { ProjectTypes } from '@config/types'
+import useViewport from '@hooks/useViewport'
 
 const Featured = ({ secondary, live, thumbnail, code, title, description, tech }: ProjectTypes) => {
+    const { isMobile } = useViewport()
+
     const __renderImage = () => {
         return (
             <div className="col-span-full md:col-span-7 relative">
@@ -89,12 +92,36 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
         )
     }
 
-    return (
-        <div className="relative grid grid-cols-12 items-center gap-3 group">
+    const __desktopView = () => {
+        return (
+            <>
+                {secondary ? (
+                    <>
+                        {__renderContent()}
+                        {__renderImage()}
+                    </>
+                ) : (
+                    <>
+                        {__renderImage()}
+                        {__renderContent()}
+                    </>
+                )}
+            </>
+        )
+    }
+
+    const __mobileView = () => {
+        return (
             <>
                 {__renderImage()}
                 {__renderContent()}
             </>
+        )
+    }
+
+    return (
+        <div className="relative grid grid-cols-12 items-center gap-3 group">
+            {isMobile ? <> {__mobileView()} </> : <> {__desktopView()} </>}
         </div>
     )
 }

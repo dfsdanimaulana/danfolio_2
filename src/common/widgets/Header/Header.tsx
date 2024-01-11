@@ -43,8 +43,8 @@ const Header = () => {
     const variants = {
         visible_top: {
             translateY: 0,
-            backgroundColor: 'transparent',
-            boxShadow: 'none',
+            backgroundColor: 'rgba(10, 25, 47, 0)',
+            boxShadow: '0 0 0 0 rgba(2, 12, 27, 0.7)',
             padding: '30px 0',
         },
         visible: {
