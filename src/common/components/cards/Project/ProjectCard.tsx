@@ -51,7 +51,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                 },
             }}
             {...motionStep}
-            className="col-span-12 sm:col-span-6 md:col-span-4 bg-slate-800 rounded-xl p-4 group"
+            className="col-span-12 sm:col-span-6 md:col-span-4 bg-slate-800 rounded-xl p-4 group flex flex-col"
         >
             <div>
                 <Link href={`${live}`}>
@@ -71,7 +71,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                 </Link>
             </div>
 
-            <div>
+            <div className="flex-1">
                 <div className="flex items-center justify-between my-5">
                     <RiFilePaperLine className="text-2xl text-sky-400" />
 
@@ -99,7 +99,9 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                 </div>
 
                 <h1 className="text-xl font-medium mb-1 text-slate-200"> {title} </h1>
-                <p className="text-slate-400 text-sm line-clamp-4"> {description} </p>
+                <div className="min-h-20">
+                    <p className="text-slate-400 text-sm line-clamp-4"> {description} </p>
+                </div>
 
                 <div className="relative w-full">
                     <div
