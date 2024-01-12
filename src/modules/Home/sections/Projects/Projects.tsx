@@ -2,11 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 //
 import Featured from '@components/cards/Project/Featured'
-import ProjectCard from '@components/cards/Project/ProjectCard'
-import Button from '@components/Button'
 import { fadeTop, fadeLeft, motionStep } from '@config/motion'
 import { projects } from '@config/constants'
 import { ProjectTypes } from '@config/types'
+import NonFeaturedProject from './NonFeaturedProject'
 
 const Projects = () => {
     return (
@@ -30,28 +29,7 @@ const Projects = () => {
                     ))}
             </div>
 
-            <div className="flex flex-col gap-3 justify-center items-center md:mt-40 md:mb-20">
-                <motion.h2 variants={fadeLeft} {...motionStep} className="text-lg md:text-3xl font-medium">
-                    <span className="text-sky-400">Other Noteworthy Projects</span>
-                </motion.h2>
-                <div className="inline-flex items-center gap-3 font-mono text-slate-300">
-                    <span className="__filter-project">WEB</span>
-                    <span className="__filter-project">GAME</span>
-                    <span className="__filter-project">APP</span>
-                </div>
-            </div>
-
-            <div className="grid grid-cols-12 gap-6 my-20 items-center">
-                {projects
-                    .filter((e: ProjectTypes) => e.featured !== true)
-                    .map((e: ProjectTypes, i: number) => (
-                        <ProjectCard {...e} key={i} />
-                    ))}
-            </div>
-
-            <div className="flex items-center justify-center">
-                <Button outlined> See More </Button>
-            </div>
+            <NonFeaturedProject />
         </section>
     )
 }

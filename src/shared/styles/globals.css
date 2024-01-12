@@ -33,9 +33,6 @@
     .__heading-line {
         @apply flex items-center w-full after:w-1/3 after:opacity-25 gap-3 after:h-[1px] after:bg-slate-400 after:inline-block;
     }
-    .__filter-project {
-        @apply cursor-pointer hover:text-sky-100;
-    }
 }
 
 * {

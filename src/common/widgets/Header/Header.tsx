@@ -134,7 +134,7 @@ const Header = () => {
                             className="hidden md:block"
                             href={`#${e.toLocaleLowerCase()}`}
                         >
-                            <li>
+                            <li className="font-mono">
                                 {' '}
                                 <span>0{i + 1}.</span> {e}{' '}
                             </li>

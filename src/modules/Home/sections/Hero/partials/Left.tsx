@@ -23,7 +23,7 @@ const Left = () => {
             </picture>
 
             <div className="relative">
-                <AnimatedTextWord text="Hi, my name is" className="text-base md:text-lg" />
+                <AnimatedTextWord text="Hi, my name is" className="text-base md:text-lg" mono />
                 <div className="mt-4 mb-8">
                     <AnimatedTextCharacter
                         className="!font-bold text-5xl md:text-8xl text-slate-300 tracking-tight"
@@ -31,7 +31,7 @@ const Left = () => {
                     />
                     <AnimatedTextCharacter
                         className="!font-bold text-3xl md:text-5xl text-slate-400 tracking-tight"
-                        text="Your Web Developer Partner"
+                        text="Web And 2D Game Developer"
                     />
                 </div>
                 <AnimatedTextWord

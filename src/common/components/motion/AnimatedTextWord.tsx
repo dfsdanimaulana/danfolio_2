@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const AnimatedTextWord = ({ text, className }: { text: string; className?: string }) => {
+const AnimatedTextWord = ({ text, className, mono }: { text: string; className?: string; mono?: boolean }) => {
     const words = text.split(' ')
 
     const container = {
@@ -44,7 +44,12 @@ const AnimatedTextWord = ({ text, className }: { text: string; className?: strin
             className={className}
         >
             {words.map((word, index) => (
-                <motion.span variants={child} style={{ marginRight: '5px' }} key={index}>
+                <motion.span
+                    variants={child}
+                    style={{ marginRight: '5px' }}
+                    key={index}
+                    className={mono ? 'font-mono' : ''}
+                >
                     {word}
                 </motion.span>
             ))}
