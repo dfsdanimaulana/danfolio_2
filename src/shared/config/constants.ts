@@ -88,7 +88,7 @@ export const projects: ProjectTypes[] = [
         title: 'Tank War I',
         description:
             'First version of Tank War Game, created using pure HTML, CSS, & Javascript and sprite sheet image',
-        tech: ['HTML', 'CSS', 'Javascript'],
+        tech: ['HTML', 'CSS', 'Javascript', 'HTML', 'CSS', 'Javascript'],
         code: 'https://github.com/dfsdanimaulana/tank-war',
         live: 'https://dfsdanimaulana.github.io/tank-war',
         thumbnail: 'tank-war-1.png',

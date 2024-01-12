@@ -29,6 +29,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
 
     return (
         <motion.div
+            whileHover={{ translateY: -5, boxShadow: '0 5px 10px 0 rgba(2, 12, 27, 0.5)' }}
             variants={{
                 visible: {
                     opacity: 1,
@@ -51,11 +52,12 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                 },
             }}
             {...motionStep}
-            className="col-span-12 sm:col-span-6 md:col-span-4 bg-slate-800 rounded-xl p-4 group flex flex-col"
+            className="h-[450px] col-span-12 md:col-span-4 bg-slate-800 rounded-xl group flex flex-col"
         >
-            <div>
+            {/* Card image */}
+            <div className="px-2 pt-2">
                 <Link href={`${live}`}>
-                    <div className="h-[200px] w-full relative rounded-xl overflow-hidden">
+                    <div className="h-[200px] w-full relative rounded-t-xl rounded-b-md overflow-hidden">
                         <Image
                             src={`/images/projects/${thumbnail}`}
                             blurDataURL={`/images/projects/${thumbnail}`}
@@ -71,7 +73,8 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                 </Link>
             </div>
 
-            <div className="flex-1">
+            <div className="flex-1 px-3 pb-3 flex flex-col">
+                {/* Card link icon */}
                 <div className="flex items-center justify-between my-5">
                     <RiFilePaperLine className="text-2xl text-sky-400" />
 
@@ -97,18 +100,24 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                         )}
                     </div>
                 </div>
-
-                <h1 className="text-xl font-medium mb-1 text-slate-200"> {title} </h1>
-                <div className="min-h-20">
+                {/* Card body  */}
+                <div className="flex-1">
+                    <h1 className="text-xl font-medium mb-1 text-slate-200"> {title} </h1>
                     <p className="text-slate-400 text-sm line-clamp-4"> {description} </p>
                 </div>
-
-                <div className="relative w-full">
+                {/* Tech */}
+                <div className="relative w-full h-[25px]">
                     <div
                         ref={swiperContainerRef}
-                        className="flex text-slate-300 mt-7 gap-x-2 overflow-x-auto mx-8"
+                        className="flex text-slate-300 gap-x-2 overflow-x-auto mx-8"
                         // use px-8 instead of mx-8 display another effect
                     >
+                        <button
+                            onClick={() => handleSwipe('left')}
+                            className="bg-slate-800 text-gray-400 text-xs font-medium border border-gray-500 shadow whitespace-nowrap cursor-pointer absolute top-0 left-0 h-6 w-6 flex justify-center items-center rounded-full"
+                        >
+                            {'<'}
+                        </button>
                         {tech.map((e: string, i: number) => (
                             <span
                                 key={i}
@@ -118,12 +127,6 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                             </span>
                         ))}
                         {/* <div className="absolute top-0 right-0 w-full flex flex-row justify-between"> */}
-                        <button
-                            onClick={() => handleSwipe('left')}
-                            className="bg-slate-800 text-gray-400 text-xs font-medium border border-gray-500 shadow whitespace-nowrap cursor-pointer absolute top-0 left-0 h-6 w-6 flex justify-center items-center rounded-full"
-                        >
-                            {'<'}
-                        </button>
                         <button
                             onClick={() => handleSwipe('right')}
                             className="bg-slate-800 text-gray-400 text-xs font-medium px-2 py-0.5 border border-gray-500 shadow whitespace-nowrap cursor-pointer absolute top-0 right-0 h-6 w-6 flex justify-center items-center rounded-full"

@@ -16,7 +16,7 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
         return (
             <div className="col-span-full md:col-span-7 relative">
                 <Link href={`${live}`}>
-                    <div className="h-[200px] md:h-[350px] w-full relative rounded-xl overflow-hidden">
+                    <div className="h-[200px] md:h-[350px] w-full relative rounded-md overflow-hidden">
                         <Image
                             src={`/images/projects/${thumbnail}`}
                             blurDataURL={`/images/projects/${thumbnail}`}
@@ -46,7 +46,7 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
                     <p className="text-sky-400"> Featured </p>
                     <h1 className="text-3xl font-medium text-slate-300"> {title} </h1>
 
-                    <div className="my-6 p-6 bg-slate-800 text-slate-300 shadow-xl rounded-xl">
+                    <div className="my-6 p-6 bg-slate-800 text-slate-300 shadow-xl rounded-md">
                         <p> {description && description} </p>
                     </div>
 

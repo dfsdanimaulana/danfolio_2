@@ -12,10 +12,10 @@ const About = () => {
             <motion.h1
                 variants={fadeLeft}
                 {...motionStep}
-                className="flex items-center gap-2 text-lg md:text-3xl font-medium text-slate-300"
+                className="flex items-center gap-2 text-lg md:text-3xl font-medium text-slate-300 mb-5"
             >
                 <span className="text-sky-400 font-mono">01. </span>
-                About Me
+                <span className="__heading-line">About Me</span>
             </motion.h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-20">

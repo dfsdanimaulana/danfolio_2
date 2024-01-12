@@ -14,10 +14,10 @@ const Projects = () => {
             <motion.h1
                 variants={fadeLeft}
                 {...motionStep}
-                className="flex items-center gap-2 text-lg md:text-3xl font-medium text-slate-300 mb-12"
+                className="flex items-center gap-2 text-lg md:text-3xl font-medium text-slate-300 mb-12 md:mb-20"
             >
                 <span className="text-sky-400 font-mono">02. </span>
-                Some Things I’ve Built
+                <span className="__heading-line">Some Things I’ve Built</span>
             </motion.h1>
 
             <div className="space-y-20">
@@ -30,7 +30,18 @@ const Projects = () => {
                     ))}
             </div>
 
-            <div className="grid grid-cols-8 2xl:grid-cols-12 gap-6 gap-y-8 my-20">
+            <div className="flex flex-col gap-3 justify-center items-center md:mt-40 md:mb-20">
+                <motion.h2 variants={fadeLeft} {...motionStep} className="text-lg md:text-3xl font-medium">
+                    <span className="text-sky-400">Other Noteworthy Projects</span>
+                </motion.h2>
+                <div className="inline-flex items-center gap-3 font-mono text-slate-300">
+                    <span className="__filter-project">WEB</span>
+                    <span className="__filter-project">GAME</span>
+                    <span className="__filter-project">APP</span>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-12 gap-6 my-20 items-center">
                 {projects
                     .filter((e: ProjectTypes) => e.featured !== true)
                     .map((e: ProjectTypes, i: number) => (
