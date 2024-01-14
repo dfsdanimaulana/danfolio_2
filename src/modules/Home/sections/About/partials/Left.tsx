@@ -15,7 +15,7 @@ const Left = () => {
     ]
 
     return (
-        <motion.div variants={fadeTop} {...motionStep} className="col-span-3">
+        <motion.div variants={fadeTop} {...motionStep} className="col-span-1 md:col-span-3">
             <div className="space-y-4 !mt-7 text-slate-400">
                 {content.map((e: string, i: number) => (
                     <p key={i} className="tracking-wide">
@@ -29,7 +29,7 @@ const Left = () => {
                         {skills.map((e: string, i: number) => (
                             <li
                                 key={i}
-                                className="gap-1 flex items-center transition-all duration-300 hover:translate-x-[7px] select-none hover:text-sky-400"
+                                className="font-mono gap-1 flex items-center transition-all duration-300 hover:translate-x-[7px] select-none hover:text-sky-400"
                             >
                                 {' '}
                                 <IoMdArrowDropright className="text-sky-400 text-xl" /> {e}

@@ -109,7 +109,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                 <div className="relative w-full h-[25px]">
                     <div
                         ref={swiperContainerRef}
-                        className="flex text-slate-300 gap-x-2 overflow-x-auto mx-8"
+                        className="flex text-slate-300 gap-x-2 overflow-x-hidden mx-8"
                         // use px-8 instead of mx-8 display another effect
                     >
                         <button

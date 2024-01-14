@@ -43,10 +43,10 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
                 )}
             >
                 <div>
-                    <p className="text-sky-400"> Featured </p>
-                    <h1 className="text-3xl font-medium text-slate-300"> {title} </h1>
+                    <p className="text-sky-400 font-[20px] mb-2"> Featured Project </p>
+                    <h1 className="text-3xl font-semibold text-slate-300"> {title} </h1>
 
-                    <div className="my-6 p-6 bg-slate-800 text-slate-300 shadow-xl rounded-md">
+                    <div className="my-7 p-7 bg-slate-800 text-slate-400 shadow-xl rounded-md">
                         <p> {description && description} </p>
                     </div>
 
@@ -59,14 +59,19 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
                         {tech.map((e: string, i: number) => (
                             <span
                                 key={i}
-                                className="bg-slate-800 text-gray-400 text-xs font-medium px-2.5 py-0.5 rounded border border-gray-500 shadow"
+                                className="bg-slate-800 text-gray-300/90 text-xs font-medium px-2.5 py-0.5 rounded border border-gray-500 shadow"
                             >
                                 {e}
                             </span>
                         ))}
                     </div>
 
-                    <div className={cx('flex justify-end mt-5 gap-3 text-slate-300', secondary && '!justify-start')}>
+                    <div
+                        className={cx(
+                            'flex justify-end items-center mt-5 gap-3 text-slate-300',
+                            secondary && '!justify-start'
+                        )}
+                    >
                         {live && (
                             <Link
                                 href={`${live}`}
@@ -81,7 +86,7 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
                             <Link
                                 href={`${code}`}
                                 target="_blank"
-                                className="hover:text-sky-400 transition-all duration-300 hover:scale-90 text-[1.2rem]"
+                                className="hover:text-sky-400 transition-all duration-300 hover:scale-110 text-[1.2rem]"
                             >
                                 <FiGithub />
                             </Link>
@@ -120,7 +125,7 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
     }
 
     return (
-        <div className="relative grid grid-cols-12 items-center gap-3 group">
+        <div className="relative grid grid-cols-12 items-center gap-3 group py-5">
             {isMobile ? <> {__mobileView()} </> : <> {__desktopView()} </>}
         </div>
     )

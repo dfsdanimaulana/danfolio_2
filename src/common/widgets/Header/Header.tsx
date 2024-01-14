@@ -11,6 +11,30 @@ import MenuButton from '@components/MenuButton'
 import { socialData } from '@widgets/Socials/config/constans'
 import { SocialTypes } from '@widgets/Socials/config/types'
 
+const NavList = ({ child, customClass }: { child: Variants; customClass?: string }) => {
+    return (
+        <>
+            {navData.map((e: string, i: number) => (
+                <motion.li className={customClass} key={i} variants={child}>
+                    <a href={`#${e.toLocaleLowerCase()}`} className="font-mono">
+                        {' '}
+                        <span>0{i + 1}.</span> {e}{' '}
+                    </a>
+                </motion.li>
+            ))}
+            <motion.li variants={child} className={customClass}>
+                <Link href="/" target="__blank">
+                    {' '}
+                    <Button outlined className="font-mono" sizeClass="py-[10px] px-[14px]">
+                        {' '}
+                        Resume{' '}
+                    </Button>{' '}
+                </Link>
+            </motion.li>
+        </>
+    )
+}
+
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const [prevScrollPos, setPrevScrollPos] = useState<number>(0)
@@ -44,7 +68,7 @@ const Header = () => {
         visible_top: {
             translateY: 0,
             backgroundColor: 'rgba(10, 25, 47, 0)',
-            boxShadow: '0 0 0 0 rgba(2, 12, 27, 0.7)',
+            boxShadow: '0 0 0 0 rgba(2, 12, 27, 0)',
             padding: '30px 0',
         },
         visible: {
@@ -127,24 +151,7 @@ const Header = () => {
                 />
 
                 <motion.ul variants={container} initial="hidden" animate="visible" className="__navright">
-                    {navData.map((e: string, i: number) => (
-                        <motion.a
-                            key={i}
-                            variants={child}
-                            className="hidden md:block"
-                            href={`#${e.toLocaleLowerCase()}`}
-                        >
-                            <li className="font-mono">
-                                {' '}
-                                <span>0{i + 1}.</span> {e}{' '}
-                            </li>
-                        </motion.a>
-                    ))}
-
-                    <Link href="/" target="__blank">
-                        {' '}
-                        <Button outlined> Resume </Button>{' '}
-                    </Link>
+                    <NavList child={child} customClass="hidden md:block" />
                 </motion.ul>
 
                 <motion.ul
@@ -153,24 +160,7 @@ const Header = () => {
                     animate={controls_mobile}
                     className="__navright-mobile"
                 >
-                    {navData.map((e: string, i: number) => (
-                        <motion.a
-                            key={i}
-                            variants={child}
-                            className="md:hidden block"
-                            href={`#${e.toLocaleLowerCase()}`}
-                        >
-                            <li>
-                                {' '}
-                                <span>0{i + 1}.</span> {e}{' '}
-                            </li>
-                        </motion.a>
-                    ))}
-
-                    <Link href="/" target="__blank">
-                        {' '}
-                        <Button outlined> Resume </Button>{' '}
-                    </Link>
+                    <NavList child={child} customClass="block md:hidden" />
 
                     <ul className="flex items-center gap-3 translate-y-10">
                         {socialData.map((e: SocialTypes, i: number) => (

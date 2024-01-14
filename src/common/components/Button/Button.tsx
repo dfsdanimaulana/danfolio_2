@@ -23,19 +23,19 @@ const Button: FC<ButtonProps> = ({
     onClick = () => {},
 }) => {
     const CLASSES = cx(
-        'relative text-white h-auto inline-flex items-center text-[14px] text-slate-800 md:text-[16px] justify-center rounded-full transition-all font-medium bg-sky-400 hover:bg-sky-300 duration-300 ',
+        '__button-class',
         disabled && '!bg-disable hover:!bg-disable cursor-not-allowed',
         loading && 'cursor-not-allowed !bg-disable hover:!bg-disable',
         fontSize,
         sizeClass,
         translate,
         className,
-        twFocusClass(true),
+        twFocusClass(true)
     )
 
-    const OUTLINED_CLASS = `!bg-transparent border border-[1.2px] !text-sky-400 border-sky-400 hover:!bg-sky-400/10`
+    const OUTLINED_CLASS = `!bg-transparent border border-[1.2px] !text-sky-400 border-sky-400`
 
-    const SECONDAY_CLASS = `!bg-slate-800 hover:!bg-slate-700 active:!text-slate-400 !text-slate-200`
+    const SECONDARY_CLASS = `!bg-slate-800 hover:!bg-slate-700 active:!text-slate-400 !text-slate-200`
 
     const _renderLoading = () => {
         return (
@@ -60,7 +60,7 @@ const Button: FC<ButtonProps> = ({
             <Link
                 href={`${href}`}
                 rel="noopener noreferrer"
-                className={cx(CLASSES, outlined && OUTLINED_CLASS, secondary && SECONDAY_CLASS)}
+                className={cx(CLASSES, outlined && OUTLINED_CLASS, secondary && SECONDARY_CLASS)}
                 onClick={onClick}
                 target={targetBlank ? '_blank' : undefined}
             >
@@ -72,7 +72,7 @@ const Button: FC<ButtonProps> = ({
     return (
         <button
             disabled={disabled || loading}
-            className={cx(CLASSES, outlined && OUTLINED_CLASS, secondary && SECONDAY_CLASS)}
+            className={cx(CLASSES, outlined && OUTLINED_CLASS, secondary && SECONDARY_CLASS)}
             onClick={onClick}
             type={type}
         >

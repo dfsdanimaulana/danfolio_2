@@ -18,7 +18,7 @@ const About = () => {
                 <span className="__heading-line">About Me</span>
             </motion.h1>
 
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-20">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-x-20">
                 <Left />
                 <Right />
             </div>

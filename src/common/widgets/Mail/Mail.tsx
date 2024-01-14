@@ -17,7 +17,7 @@ const Mail = () => {
             <div className="space-y-6 after:h-[90px] after:w-[1px] after:bg-slate-400 after:block after:mx-auto after:mt-6">
                 <Link
                     href="mailto:danimaulana9f@gmail.com"
-                    className="text-[15px] text-slate-400 hover:text-sky-400 cursor-pointer transition-all duration-300 hover:translate-y-[-10px] rl"
+                    className="font-mono tracking-widest text-[15px] text-slate-400 hover:text-sky-400 cursor-pointer transition-all duration-300 hover:translate-y-[-10px] rl"
                 >
                     danimaulana9f@gmail.com
                 </Link>

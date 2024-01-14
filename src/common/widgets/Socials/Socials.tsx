@@ -18,7 +18,7 @@ const Socials = () => {
         >
             <ul className="space-y-6 after:h-[90px] after:w-[1px] after:bg-slate-400 after:block after:mx-auto after:mt-6">
                 {socialData.map((e: SocialTypes, i: number) => (
-                    <li key={i}>
+                    <motion.li whileHover={{ translateY: -3 }} key={i}>
                         <Link
                             href={e.url}
                             target="_blank"
@@ -26,7 +26,7 @@ const Socials = () => {
                         >
                             {<e.icon />}
                         </Link>
-                    </li>
+                    </motion.li>
                 ))}
             </ul>
         </motion.div>
