@@ -9,7 +9,7 @@ import NonFeaturedProject from './NonFeaturedProject'
 
 const Projects = () => {
     return (
-        <section id="works" className="container">
+        <section id="projects" className="container">
             <motion.h1
                 variants={fadeLeft}
                 {...motionStep}

@@ -41,9 +41,9 @@ const Left = () => {
             </div>
 
             <motion.div variants={fadeUpSpring} initial="hidden" animate="visible" className="w-fit mt-16">
-                <a href="#works">
+                <a href="#projects">
                     <Button outlined className="font-mono" sizeClass="px-[20px] md:px-[27px] py-[13px] md:py-[20px]">
-                        Check Out My Works
+                        Check Out My Projects
                     </Button>
                 </a>
             </motion.div>

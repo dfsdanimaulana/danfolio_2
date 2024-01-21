@@ -19,16 +19,12 @@ const Meta = () => {
             {/* Description and Keywords Metadata */}
             <meta
                 name="description"
-                content="#MernStack #FullStack #WebsiteDevelopment - Developing websites for individuals, startups, small and medium businesses, and enterprises"
+                content="I'm a web developer with a passion for creating beautiful and functional websites and 2D web games. I am a self-taught developer with a strong foundation in HTML, CSS, and JavaScript."
             />
             <meta
                 name="keywords"
                 content="javascript, typescript, react js, next js, express js, node js, mongodb, mern stack developer, web development, website development, web developer, website developer"
             />
-
-            <meta name="google-site-verification" content="sZPmFgCCG9yDDjVqCsdembcfkOLDihLkjCWdXkxnEVI" />
-            <meta name="msvalidate.01" content="100EE9C6C0FC17AF45101A46F9363D0C" />
-            <meta name="p:domain_verify" content="c55db76c3a2ff1b5533315270d4676b3" />
 
             {/* Open Graph Tags (for Facebook) */}
             <meta property="og:site_name" content="Dani Maulana" />
@@ -37,15 +33,12 @@ const Meta = () => {
             <meta property="og:title" content="Dani Maulana (@dnm17_), a full stack web developer" />
             <meta
                 property="og:description"
-                content="#MernStack #FullStack #WebsiteDevelopment - Developing websites for individuals, startups, small and medium businesses, and enterprises"
+                content="I'm a web developer with a passion for creating beautiful and functional websites and 2D web games. I am a self-taught developer with a strong foundation in HTML, CSS, and JavaScript."
             />
-            <meta
-                property="og:image"
-                content="https://res.cloudinary.com/dkmf4t55r/image/upload/v1693567142/Og-Images/devhasibulislam.png"
-            />
+            <meta property="og:image" content="https://danfolio.vercel.app/preview.png" />
 
             {/* Article Publisher Metadata */}
-            <meta property="article:publisher" content="https://www.linkedin.com/in/devhasibulislam/" />
+            <meta property="article:publisher" content="https://www.linkedin.com/in/dani-maulana-58798b215/" />
 
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -53,24 +46,18 @@ const Meta = () => {
             <meta name="twitter:title" content="Dani Maulana (@dnm17_), a full stack web developer" />
             <meta
                 name="twitter:description"
-                content="#MernStack #FullStack #WebsiteDevelopment - Developing websites for individuals, startups, small and medium businesses, and enterprises"
+                content="I'm a web developer with a passion for creating beautiful and functional websites and 2D web games. I am a self-taught developer with a strong foundation in HTML, CSS, and JavaScript."
             />
-            <meta
-                name="twitter:image"
-                content="https://res.cloudinary.com/dkmf4t55r/image/upload/v1693567142/Og-Images/devhasibulislam.png"
-            />
+            <meta name="twitter:image" content="https://danfolio.vercel.app/preview.png" />
 
             {/* Pinterest Tags */}
             <meta name="pinterest-rich-pin" content="true" />
             <meta name="pinterest:title" content="Dani Maulana (@dnm17_), a full stack web developer" />
             <meta
                 name="pinterest:description"
-                content="#MernStack #FullStack #WebsiteDevelopment - Developing websites for individuals, startups, small and medium businesses, and enterprises"
+                content="I'm a web developer with a passion for creating beautiful and functional websites and 2D web games. I am a self-taught developer with a strong foundation in HTML, CSS, and JavaScript."
             />
-            <meta
-                name="pinterest:image"
-                content="https://res.cloudinary.com/dkmf4t55r/image/upload/v1693567142/Og-Images/devhasibulislam.png"
-            />
+            <meta name="pinterest:image" content="https://danfolio.vercel.app/preview.png" />
         </>
     )
 }

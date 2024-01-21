@@ -121,7 +121,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }: Projec
                         {tech.map((e: string, i: number) => (
                             <span
                                 key={i}
-                                className="bg-slate-800 text-gray-400 text-xs font-medium px-2.5 py-0.5 rounded border border-gray-500 shadow whitespace-nowrap lowercase"
+                                className="bg-slate-800 text-gray-400 text-xs font-medium font-mono px-2.5 py-0.5 rounded border border-gray-500 shadow whitespace-nowrap lowercase"
                             >
                                 {e}
                             </span>

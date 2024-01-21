@@ -43,7 +43,7 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
                 )}
             >
                 <div>
-                    <p className="text-sky-400 font-[20px] mb-2"> Featured Project </p>
+                    <p className="text-sky-400 font-[20px] mb-2 font-mono"> Featured Project </p>
                     <h1 className="text-3xl font-semibold text-slate-300"> {title} </h1>
 
                     <div className="my-7 p-7 bg-slate-800 text-slate-400 shadow-xl rounded-md">
@@ -59,7 +59,7 @@ const Featured = ({ secondary, live, thumbnail, code, title, description, tech }
                         {tech.map((e: string, i: number) => (
                             <span
                                 key={i}
-                                className="bg-slate-800 text-gray-300/90 text-xs font-medium px-2.5 py-0.5 rounded border border-gray-500 shadow"
+                                className="bg-slate-800 text-gray-300/90 text-xs font-medium font-mono px-2.5 py-0.5 rounded border border-gray-500 shadow"
                             >
                                 {e}
                             </span>

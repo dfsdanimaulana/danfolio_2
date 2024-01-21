@@ -5,7 +5,7 @@ import { ProjectTypes } from './types'
 export const cx = classNames
 
 // nav data
-export const navData = ['About', /*'Experiences', */ 'Works' /*, 'Services'*/, 'Contact']
+export const navData = ['About', /*'Experiences', */ 'Projects' /*, 'Services'*/, 'Contact']
 
 // project data
 export const projects: ProjectTypes[] = [
@@ -44,7 +44,7 @@ export const projects: ProjectTypes[] = [
     {
         title: 'Simple Snake',
         description:
-            "An online 2D web game it's a simple snake game where you just need to eat the food and grow, and become number 1 in the leaderboard.",
+            'This is a simple Snake game with Firebase integration, created using JavaScript and Firebase. The game allows users to play Snake and compete on a global scoreboard.',
         tech: ['HTML', 'CSS', 'javascript', 'Firebase', 'Webpack'],
         code: 'https://github.com/dfsdanimaulana/simple-snake',
         live: 'https://dfsdanimaulana.github.io/simple-snake',
@@ -55,7 +55,7 @@ export const projects: ProjectTypes[] = [
     {
         title: 'Natours: Tour Guide',
         description:
-            'Natours is an intricately designed landing page UI dedicated to tour guides and travel aficionados. Immerse yourself in its captivating interface, meticulously crafted using HTML, CSS, and Javascript to ensure a seamless and engaging user experience.',
+            'A landing page UI dedicated to tour guides and travel aficionados. Crafted using HTML, CSS, and Javascript to ensure a seamless and engaging user experience.',
         tech: ['HTML', 'CSS', 'javascript'],
         code: 'https://github.com/dfsdanimaulana/natours',
         live: 'https://dfsdanimaulana.github.io/natours',
@@ -66,7 +66,7 @@ export const projects: ProjectTypes[] = [
     {
         title: 'The Dojo: Project Manager',
         description:
-            'The Dojo is a dynamic project management website meticulously crafted with React.js and powered by Firebase, designed to empower teams and individuals in seamlessly orchestrating and executing their projects. Combining the flexibility of React.js for a responsive and interactive user interface with the robust backend capabilities of Firebase, The Dojo offers a user-friendly experience for project planning, collaboration, and tracking.',
+            'A dynamic project management website crafted with React.js and Firebase, designed to empower teams and individuals in seamlessly orchestrating and executing their projects.',
         tech: ['React JS', 'Firebase'],
         code: 'https://github.com/dfsdanimaulana/the-dojo',
         live: 'https://thedojosite-686bb.web.app',
@@ -76,7 +76,7 @@ export const projects: ProjectTypes[] = [
     },
     {
         title: 'Twice Memory Card I',
-        description: 'First version of Twice Memory Card Game',
+        description: 'First version of Twice Memory Card Game created using React.js.',
         tech: ['React JS'],
         code: 'https://github.com/dfsdanimaulana/memorygame',
         live: 'https://dfsdanimaulana.github.io/memorygame',
@@ -87,7 +87,7 @@ export const projects: ProjectTypes[] = [
     {
         title: 'Tank War I',
         description:
-            'First version of Tank War Game, created using pure HTML, CSS, & Javascript and sprite sheet image',
+            'First version of Tank War Game, created using pure HTML, CSS, & Javascript and sprite sheet image.',
         tech: ['HTML', 'CSS', 'Javascript', 'HTML', 'CSS', 'Javascript'],
         code: 'https://github.com/dfsdanimaulana/tank-war',
         live: 'https://dfsdanimaulana.github.io/tank-war',
