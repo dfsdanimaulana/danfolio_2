@@ -141,7 +141,7 @@ const Header = () => {
                     initial="hidden"
                     animate="visible"
                     variants={child}
-                    className="block lg:hidden z-50"
+                    className="block md:hidden z-50"
                     isOpen={isOpen}
                     onClick={() => setIsOpen(!isOpen)}
                     strokeWidth="4"

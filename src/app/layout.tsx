@@ -14,7 +14,7 @@ const urbanist = Urbanist({ subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html className={urbanist.className}>
+        <html className={urbanist.className} lang="en">
             <head>
                 <Meta />
             </head>
